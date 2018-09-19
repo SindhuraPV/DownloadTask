@@ -14,6 +14,7 @@
 		BAE2AB242152738F005ED6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE2AB222152738F005ED6E1 /* LaunchScreen.storyboard */; };
 		BAE2AB2F2152738F005ED6E1 /* DownloadTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2AB2E2152738F005ED6E1 /* DownloadTaskTests.swift */; };
 		BAE2AB3A2152738F005ED6E1 /* DownloadTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2AB392152738F005ED6E1 /* DownloadTaskUITests.swift */; };
+		BAE2AB48215273C0005ED6E1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2AB47215273C0005ED6E1 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BAE2AB352152738F005ED6E1 /* DownloadTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE2AB392152738F005ED6E1 /* DownloadTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTaskUITests.swift; sourceTree = "<group>"; };
 		BAE2AB3B2152738F005ED6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE2AB47215273C0005ED6E1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BAE2AB1921527387005ED6E1 /* AppDelegate.swift */,
+				BAE2AB47215273C0005ED6E1 /* Extensions.swift */,
 				BAE2AB1B21527387005ED6E1 /* ViewController.swift */,
 				BAE2AB1D21527388005ED6E1 /* Main.storyboard */,
 				BAE2AB202152738F005ED6E1 /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE2AB1C21527387005ED6E1 /* ViewController.swift in Sources */,
+				BAE2AB48215273C0005ED6E1 /* Extensions.swift in Sources */,
 				BAE2AB1A21527387005ED6E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,14 +434,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ZNVXX3QAYV;
 				INFOPLIST_FILE = DownloadTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.development.carmel.DownloadTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.carmel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c525eeb6-78b7-40e0-959d-d73352440834";
+				PROVISIONING_PROFILE_SPECIFIER = CarmelDevelopment_30_Aug_2018;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,14 +454,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ZNVXX3QAYV;
 				INFOPLIST_FILE = DownloadTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.development.carmel.DownloadTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.carmel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6850edbb-01ab-4b48-850c-09a8f8ea6387";
+				PROVISIONING_PROFILE_SPECIFIER = CarmelDistribution_30_Aug_2018;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
